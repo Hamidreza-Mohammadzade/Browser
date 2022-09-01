@@ -1,0 +1,317 @@
+html , body{
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: #ECF0F3;
+}
+/* =====================================Base style=============================== */
+.header{
+    width: 100%;
+    height: 90px;
+    display: flex;
+    flex-direction: row;
+    box-sizing: border-box;
+    justify-content: space-between;
+    align-items: center;
+
+    padding-right: 50px;
+    padding-left: 50px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.main{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    row-gap: 30px;
+}
+
+.footer{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    box-sizing: border-box;
+    justify-content: space-between;
+    align-items: center;
+
+    padding-right: 50px;
+    padding-left: 50px;
+}
+
+/* =======================================header-languege================================== */
+
+.languege{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 10px;
+
+    width: 90px;
+    height: 20px;
+
+    transition: height 1s;
+
+    padding: 5px;
+    padding-left: 8px;
+    padding-right: 8px;
+
+    background-color: #E2E6E9;
+    color: rgb(70, 70, 70);
+    border-radius: 35px;
+}
+
+.dropdownLan{
+    display: none;
+    position: fixed;
+    top: 54px;
+    width: 100px;
+    height: 250px;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    row-gap: 10px;
+    background-color: #c3c6c9;
+    text-decoration: none;
+    box-sizing: border-box;
+    padding-top: 12px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.dropdownLan a:hover{
+    color: rgb(250, 248, 248);
+    cursor: pointer;
+}
+
+.languege:hover .dropdownLan{
+    display: flex;
+}
+
+.languege:hover{
+    background-color: #c3c6c9;
+}
+
+.ArrowMenu{
+    transition: transform 500ms;
+}
+/* ==========================================header-account================================== */
+.account{
+    display: flex;
+    justify-content: center;
+    column-gap: 20px;
+}
+
+.Email , .Menu , .Acc{
+    width: 40px;
+    height: 40px;
+    background-color: #E2E6E9;
+    color: rgb(70, 70, 70);
+    border-radius: 30px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 18px;
+}
+
+.Email:hover , .Menu:hover{
+    background-color: #d3d6da;
+    cursor: pointer;
+}
+
+.Acc{
+    width: 53px;
+    height: 53px;
+    border-radius: 53px;
+
+    font-size: 22px;
+
+    background-color: #ECF0F3;
+    box-shadow: -5px -5px 8px white , 5px 5px 8px lightgray;
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+
+.AccIMG{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.AccInfo{
+    position: absolute;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+
+    width: 200px;
+    height: 300px;
+    background-color: #ECF0F3;
+
+    box-shadow: -5px -5px 8px white , 5px 5px 8px lightgray;
+
+    border-radius: 5px;
+    border-bottom-right-radius: 50px;
+    border-top-left-radius: 20px;
+}
+
+.AccInfoImg{
+    width: 60px;
+    height: 60px;
+    
+    border-radius: 60px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    box-shadow: -5px -5px 10px white , 5px 5px 10px lightgray;
+}
+
+.OptionButt{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.AccOptionButt{
+    width: 30px;
+    height: 30px;
+    
+    border-radius: 30px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+
+    box-shadow: 0 0 5px black;
+}
+
+.AccOptionButt:hover{
+    background-color: rgb(226, 226, 226);
+    cursor: pointer;
+    box-shadow: 0 0 10px gray;
+}
+
+.OptionTx{
+    text-align: left;
+    border-top: 1px solid lightgray;
+
+    font-size: 16px;
+    padding-right: 15px;
+
+    text-decoration: none;
+    color: black;
+}
+
+.TextOptionTx{
+    text-decoration: none;
+    color: black;
+}
+
+.TextOptionTx:hover{
+    color: rgb(92, 92, 92);
+}
+
+.Acc:hover .AccInfo{
+    display: flex;
+}
+
+/* ========================================search============================================= */
+.search{
+    width: 40%;
+    height: 70px;
+
+    display: flex;
+    box-sizing: border-box;
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: #ECF0F3;
+    border-radius: 70px;
+    box-shadow: -7px -8px 10px white , 7px 8px 10px lightgray;
+
+    padding-left: 20px;
+    padding-right: 20px;
+
+    font-size: 20px;
+}
+
+.search-in{
+    width: 90%;
+    height: 50px;
+    outline: 0;
+    border: 0;
+    font-size: 15px;
+    box-sizing: border-box;
+    padding-left: 6px;
+    padding-right: 5px;
+
+    background-color: transparent;
+}
+
+.options{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 20px;
+}
+
+.option-search-butt{
+    width: 50px;
+    height: 50px;
+    background-color: #E2E6E9;
+    color: rgb(70, 70, 70);
+    border-radius: 50px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 20px;
+}
+
+.option-search-butt:hover{
+    background-color: #d3d6da;
+    cursor: pointer;
+}
+/* ==============================================footer-location=================================== */
+.location{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 10px;
+    font-size: 16px;
+    color: rgb(70, 70, 70);
+}
+/* ============================================footer-setting===================================== */
+.setting{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 20px;
+    font-size: 17px;
+    color: rgb(70, 70, 70);
+}

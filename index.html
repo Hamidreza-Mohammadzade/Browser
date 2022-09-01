@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Browser</title>
+    
+    <link href="browser.png" rel="icon">
+    <link href="style.css" rel="stylesheet">
+    <link href="fontawesome/css/all.css" rel="stylesheet">
+
+</head>
+<body>
+    <nav class="header">
+        <div class="languege" id="SelectLan">
+            <i class="fa-solid fa-angle-down ArrowMenu" id="ArrowMenu"></i>
+            <p class="BrowserLan" id="BrowserLan">English</p>
+            <div class="dropdownLan">
+                <a id="English">English</a>
+                <a id="Russian">Russian</a>
+                <a id="Italian">Italian</a>
+                <a id="Japanese">Japanese</a>
+                <a id="French">French</a>
+                <a id="German">German</a>
+            </div>  
+        </div>
+
+        <div class="account">
+            <div class="Email"><i class="fa-regular fa-envelope"></i></div>
+
+            <div class="Menu"><i class="fa-solid fa-bars"></i></div>
+
+            <div class="Acc">
+                <div class="AccIMG"><i class="fa-solid fa-user"></i></div>
+            
+                <div class="AccInfo">
+                    <div class="AccInfoImg"><i class="fa-solid fa-user"></i></div>
+    
+                    <div class="OptionButt">
+                        <div class="AccOptionButt"><i class="fa-solid fa-key"></i></div>
+                        <div class="AccOptionButt"><i class="fa-solid fa-wallet"></i></div>
+                    </div>
+    
+                    <div class="OptionTx">
+                        <ul>
+                            <li><a id="ManageOptionAcc" href="#" class="TextOptionTx">Manage your Account</a></li>
+                            <br>
+                            <li><a id="CustomizeOptionAcc" href="#" class="TextOptionTx">Customize</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </nav>
+
+    <div class="main">
+        <div class="search">
+            <i class="fa-brands fa-google"></i>
+            <input type="text" placeholder="Search or type a URL" class="search-in" id="SearchIn">
+            <i class="fa-solid fa-microphone"></i>
+        </div>
+
+        <div class="options">
+            <div class="option-search-butt"><i class="fa-solid fa-plus"></i></div>
+
+            <div class="option-search-butt"><i class="fa-regular fa-image"></i></div>
+
+            <div class="option-search-butt"><i class="fa-regular fa-bookmark"></i></div>
+
+            <div class="option-search-butt"><i class="fa-regular fa-face-grin-hearts"></i></div>
+        </div>
+    </div>
+
+    <nav class="footer">
+        <div class="location">
+            <i class="fa-solid fa-location-crosshairs"></i>
+            <p>Bangladesh</p>
+        </div>
+
+        <div class="setting">
+            <i class="fa-solid fa-circle-info"></i>
+            <i class="fa-solid fa-gear"></i>
+        </div>
+    </nav>
+</body>
+<script src="index.js"></script>
+</html>
